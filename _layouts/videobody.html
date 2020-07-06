@@ -1,0 +1,60 @@
+---
+layout: base
+---
+{% for item in site.data.videos %}
+{% if item.link == page.url %}
+<div class="container-fluid p-0 body">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div class="video-responsive">
+                    <iframe width="836" height="470" src="{{ item.url }}" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="video_info">
+                    <p>{{ item.title }}</p>
+                    <span class="nbvue">{{ item.vues }}</span>•<span class="date">{{ item.date }}</span>
+                    <div class="video_action">
+                        <div class="video_actionbtn">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="">
+                            <path
+                                d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z">
+                            </path>
+                        </svg>
+                        <div class="btn_text">124 K</div>
+                        </div>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="">
+                            <path
+                                d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="">
+                            <path d="M14 9V5l7 7-7 7v-4.1c-5 0-8.5 1.6-11 5.1 1-5 4-10 11-11z"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="">
+                            <path
+                                d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" fill="">
+                            <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="description">
+                    {{ page.description | markdownify }}
+                    <div>
+                        <a href="" data-target="#test" data-toggle="collapse" aria-expanded="true" id="haut"
+                            class="plus">PLUS</a>
+                        <div id="test" class="collapse" aria-expanded="true">
+                            {{ content }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,40 @@
+.nav-haut {
+    & .icons-top {
+        justify-content: flex-end;
+    }
+
+    & img  {
+        margin-right: 5px;
+    }
+
+    & .btn {
+        border: none;
+    }
+    & .icons {
+        width: 24px;
+        height: 24px;
+    }
+    & li {
+        padding-right: 10px;
+    }
+    & .dropdown-menu {
+        left: -132px;
+    }
+
+    & .search.dropdown-item:hover {
+        background-color: transparent;
+    }
+
+    & .dropdown-item:active {
+        background-color: transparent;
+    }
+
+    & .form-inline:hover {
+        background-color: transparent;
+    }
+    & .search .form-control:focus {
+        border-color: transparent;
+        box-shadow: unset;
+    }
+
+}

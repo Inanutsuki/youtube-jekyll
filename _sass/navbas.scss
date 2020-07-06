@@ -1,0 +1,41 @@
+.nav-bas {
+    position: fixed;
+    bottom: 0;
+
+        & svg {
+            width: 24px;
+        }
+        & .navbar-nav {
+            justify-content: space-around;
+        }
+        & .nav-item {
+            width: 100%;
+        }
+        & .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        & .nav-link {
+            margin: 10px 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        & .text-link {
+            font-weight: 400;
+            padding: 0 4px;
+            font-size: 12px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        
+        & a:focus svg{
+            fill: red;
+            font-weight: 400;
+        }
+        & a:focus .text-link {
+            color: red;
+            font-weight: 400;
+          }        
+}

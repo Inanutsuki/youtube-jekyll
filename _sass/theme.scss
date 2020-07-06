@@ -1,0 +1,77 @@
+
+
+body.theme-dark {
+    & .nav-haut {
+        @include bg-nav($theme-dark);
+        & .icons-top {
+            color: $theme-smooth;
+        }
+        & .icons {
+            fill: $theme-smooth;
+        }
+        & .dropdown-toggle::after {
+            color: $theme-smooth;
+        }
+    }
+    & .body {
+        & .card {
+            background-color: $theme-dark;
+        }
+        & .card-title {
+            color: $theme-smooth;
+        }
+        & svg {
+            fill: $theme-smooth;
+        }
+        & .navigator {
+            background-color: $theme-dark;
+        }
+    }
+    & .nav-bas {
+        @include bg-nav($theme-dark);
+        & .text-link {
+            color: $theme-smooth;
+        }
+        & svg {
+            fill: $theme-smooth;
+        }
+    }
+}
+
+body.theme-smooth {
+    & .nav-haut {
+        @include bg-nav($theme-smooth);
+        & .icons-top {
+            color: $theme-dark;
+        }
+        & .icons {
+            fill: $theme-dark;
+        }
+        & .dropdown-toggle::after {
+            color: $theme-dark;
+        }
+    }
+    & .body {
+        & .card {
+            background-color: $theme-smooth;
+        }
+        & .card-title {
+            color: $theme-dark;
+        }
+        & svg {
+            color: $theme-dark;
+        }
+        & .navigator {
+            background-color: $theme-smooth;
+        }
+    }
+    & .nav-bas {
+        @include bg-nav($theme-smooth);
+        & .text-link {
+            color: $theme-dark;
+        }
+        & svg {
+            fill: $theme-dark;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+<div class="container-fluid p-0 body">
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Pas intéressé</p>
+                    <p>Enregistrer dans la playlist "A regarder plus tard"</p>
+                    <p>Annuler</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% for item in site.data.videos %}
+    <div class="card">
+        <div class="card-body">
+            <div class="row mt-md-4">
+                <div class="col-md-4">
+                    <a href="{{ item.link }}"><img
+                            alt="Image de couverture de la vidéo : titre de la vidéo en blanc sur fond noir, gros plan sur le personnage principal de Bref."
+                            class="card-img" src="{{ item.img }}" height="210px"></a>
+                </div>
+                <div class="row col-md-8">
+                    <img class="logo col-3" alt="logo de la chaîne youtube Bref. : Bref. écrit en blanc sur fond noir"
+                        src="{{ item.logo }}">
+                    <div class="col p-0">
+                        <a href="{{ item.link }}">
+                            <h6 class="card-title">{{ item.title }}</h6>
+                        </a>
+                        <span>{{ item.chaine }}</span><span class="ytm-badge-and-byline-separator"
+                            aria-hidden="true">•</span><span>{{ item.vues }}</span><span
+                            class="ytm-badge-and-byline-separator"
+                            aria-hidden="true">•</span><span>{{ item.date | date_to_string }}</span>
+                    </div>
+                    <div class="col-2 svg" type="button" data-toggle="modal" data-target="#modal">
+                        <svg classviewBox="0 0 24 24" fill="">
+                            <path
+                                d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="navigator">
+
+    </div>
+
+</div>

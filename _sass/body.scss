@@ -1,0 +1,90 @@
+.body {
+
+    & svg {
+        width: 24px;
+    }
+    & .svg {
+        text-align: right;
+    }
+    & .card-body {
+        padding-top: 0px;
+    }
+    & .card {
+        border: none;
+        border-radius: 0;
+    }
+    & .card-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    & .logo {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        max-width: 70px;
+        max-height: 42px;
+    }
+    & span {
+        padding: 2.5px;
+        color: #c5c5c5;
+        font-size: 12px;
+    }
+    & .row .row {
+        padding-top: 5px;
+        margin: 0px;
+        height: 75px;
+    }
+    & h6 {
+        font-size: small;
+        font-weight: 600;
+        margin-bottom: 1px;
+    }
+    & .video-responsive { 
+        overflow:hidden; 
+        padding-bottom:56.25%;
+        position:relative; 
+        height:0;
+    }
+    & .video-responsive iframe {
+        left:0; 
+        top:0; 
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+    & .video_info {
+        margin: 15px 15px 0 15px;
+        & .video_title {
+            margin-bottom: 0;
+        }
+        & .video_nbvue {
+            color: hsla(0,0%,6.7%,.6);
+        }
+        & .video_action {
+            display: flex;
+            justify-content: space-around;
+        } 
+    }
+    & .navigator {
+        width: 100%;
+        height: 85px;
+    }
+    & .description{
+        margin-left: 15px;
+    }
+
+    & .plus {
+        color: $theme-dark ;
+    }
+
+    & .show {
+        text-decoration: transparent;
+    }
+
+    & a:hover {
+        text-decoration: transparent;
+    }
+}
+
