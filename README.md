@@ -1,1 +1,1 @@
-[https://inanutsuki.github.io/youtube-jekyll/]
+https://inanutsuki.github.io/youtube-jekyll/
