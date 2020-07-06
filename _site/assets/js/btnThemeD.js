@@ -1,0 +1,1 @@
+function btnThemeD(elem){   elem.className="theme-dark";}
