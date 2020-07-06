@@ -1,3 +1,5 @@
+baseurl: youtube-jekyll
+
 collections:
   videos: 
     output: true
