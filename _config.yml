@@ -1,4 +1,4 @@
-baseurl: youtube-jekyll
+baseurl: /youtube-jekyll
 
 collections:
   videos: 
