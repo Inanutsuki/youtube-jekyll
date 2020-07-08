@@ -76,7 +76,11 @@ body.theme-smooth .nav-bas svg { fill: #202020; }
 
 .body .navigator { width: 100%; height: 85px; }
 
-.body .description { margin-left: 15px; }
+.body .description-plus { display: block; }
+
+.body .description-moins { display: none; }
+
+.body a:hover { cursor: pointer; }
 
 .body .plus { color: #202020; }
 

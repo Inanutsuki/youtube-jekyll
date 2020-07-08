@@ -73,8 +73,14 @@
         width: 100%;
         height: 85px;
     }
-    & .description{
-        margin-left: 15px;
+    & .description-plus{
+        display: block ;
+    }
+    & .description-moins{
+        display: none ;
+    }
+    & a:hover{
+        cursor: pointer;
     }
     & .plus {
         color: $theme-dark ;
